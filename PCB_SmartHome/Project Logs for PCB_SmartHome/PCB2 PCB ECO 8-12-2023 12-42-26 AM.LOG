@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=SERVO Pin=ESP32-15
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2

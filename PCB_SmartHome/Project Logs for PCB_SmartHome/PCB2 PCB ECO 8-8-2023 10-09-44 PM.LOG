@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=   NewDesignator=I2C
+Added Pin To Net: NetName=GND Pin=I2C-1

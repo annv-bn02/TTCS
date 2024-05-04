@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=VCC Pin=  -1
+Removed Pin From Net: NetName=AS Pin=  -3
+Change Component Designator: OldDesignator=   NewDesignator=Light Sensor
+Change Component Designator: OldDesignator=   NewDesignator=SERVO2
+Added Pin To Net: NetName=AS Pin=Light Sensor-1
+Added Pin To Net: NetName=VCC Pin=Light Sensor-3
+Added Member To Class: ClassName=Sheet2 Member=Component SERVO2 Header3

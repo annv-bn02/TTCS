@@ -1,0 +1,23 @@
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=SW1 Pin=R14-2
+Added Pin To Net: NetName=SW2 Pin=R15-2
+Added Pin To Net: NetName=SW3 Pin=R16-2
+Added Pin To Net: NetName=SW4 Pin=R17-2
+Added Pin To Net: NetName=SW5 Pin=R18-2
+Added Pin To Net: NetName=SW1 Pin=SW1-1
+Added Pin To Net: NetName=GND Pin=SW1-4
+Added Pin To Net: NetName=SW2 Pin=SW2-1
+Added Pin To Net: NetName=GND Pin=SW2-4
+Added Pin To Net: NetName=SW3 Pin=SW3-1
+Added Pin To Net: NetName=GND Pin=SW3-4
+Added Pin To Net: NetName=SW4 Pin=SW4-1
+Added Pin To Net: NetName=GND Pin=SW4-4
+Added Pin To Net: NetName=SW5 Pin=SW5-1
+Added Pin To Net: NetName=GND Pin=SW5-4
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2

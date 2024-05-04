@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=VCC Pin=MOVE SENSOR-1
+Removed Pin From Net: NetName=GND Pin=MOVE SENSOR-3
+Change Component Designator: OldDesignator=    NewDesignator=R14
+Change Component Designator: OldDesignator=  NewDesignator=R15
+Change Component Designator: OldDesignator=  NewDesignator=R16
+Change Component Designator: OldDesignator=  NewDesignator=R17
+Added Pin To Net: NetName=GND Pin=MOVE SENSOR-1
+Added Pin To Net: NetName=VCC Pin=MOVE SENSOR-3
+Added Member To Class: ClassName=Khoi_Switch Member=Component R15 10k
+Added Member To Class: ClassName=Khoi_Switch Member=Component R16 10k
+Added Member To Class: ClassName=Sheet2 Member=Component  P1
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2

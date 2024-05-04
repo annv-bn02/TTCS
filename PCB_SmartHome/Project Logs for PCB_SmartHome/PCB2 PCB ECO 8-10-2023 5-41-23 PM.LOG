@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=3.3V Pin=R13-1
+Added Pin To Net: NetName=VCC Pin=R13-1
+Added Member To Class: ClassName=Sheet2 Member=Component MQ2 Header4
+Added Member To Class: ClassName=Khoi_Switch Member=Component R16 10k
+Added Member To Class: ClassName=Khoi_Switch Member=Component R18 10k
+Added Member To Class: ClassName=Sheet2 Member=Component  P1

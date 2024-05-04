@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=MQ2 Pin=ESP32-3
+Removed Pin From Net: NetName=AS Pin=ESP32-4
+Removed Pin From Net: NetName=SW5 Pin=ESP32-5
+Removed Pin From Net: NetName=SW4 Pin=ESP32-6
+Removed Pin From Net: NetName=SW3 Pin=ESP32-7
+Removed Pin From Net: NetName=SW2 Pin=ESP32-8
+Removed Pin From Net: NetName=NTC Pin=ESP32-15
+Change Component Designator: OldDesignator=   NewDesignator=C5
+Added Pin To Net: NetName=NTC Pin=ESP32-3
+Added Pin To Net: NetName=SW5 Pin=ESP32-4
+Added Pin To Net: NetName=SW4 Pin=ESP32-5
+Added Pin To Net: NetName=SW3 Pin=ESP32-6
+Added Pin To Net: NetName=SW2 Pin=ESP32-7
+Added Pin To Net: NetName=SW1 Pin=ESP32-8

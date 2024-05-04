@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=I2C-1
+Removed Pin From Net: NetName=GND Pin=SERVO1-2
+Removed Pin From Net: NetName=GND Pin=SERVO2-2
+Added Pin To Net: NetName=GND1 Pin=ESP32-32
+Added Pin To Net: NetName=GND1 Pin=I2C-1
+Added Pin To Net: NetName=GND1 Pin=SERVO1-2
+Added Pin To Net: NetName=GND1 Pin=SERVO2-2
+Added Net: Name=GND1
+Added Room: Name=Khoi_Relay
+Added Room: Name=Sheet2

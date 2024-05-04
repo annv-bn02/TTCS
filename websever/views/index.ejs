@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Thực Tập Cơ Sở</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.socket.io/3.1.3/socket.io.min.js"
+      integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+  </head>
+  <body id="background">
+    <div class="container my-3 bg-white text-dark rounded">
+      <div class="row py-3">
+        <h2 class="text-center" style="color: #cd1420">Hệ thống quản lí nhà ở</h2>
+      </div>
+    </div>
+
+
+    <!-- sensor -->
+
+
+    <div
+      class="container pb-lg-2 my-4 bg-white"
+      id="container"
+      style="background-attachment: rgba(250, 250, 250, 0.89) !important"
+    >
+      <div class="row">
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 360px">
+            <div class="card-header" style="background-color: rgba(36, 149, 241, 0.614)">
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Nhiệt độ</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Giá trị đo được:</div>
+              <!-- </div>
+
+              <div class="row"> -->
+                <div class="col-sm-3" style="text-align: right">
+                  <span id="sensor_data_1"> </span>
+                </div>
+                <div class="col-sm-3">
+                  <h5>C</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 360px">
+            <div class="card-header" style="background-color: rgba(36, 149, 241, 0.614)">
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Ánh sáng ngoài trời</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Bên ngoài trời:</div>
+              <!-- </div>
+
+              <div class="row"> -->
+                <div class="col-sm-3" style="text-align: right">
+                  <span id="sensor_data_2"> </span>
+                </div>
+                <!-- <div class="col-sm-3">
+                  <h5>Lux</h5>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 360px">
+            <div class="card-header" style="background-color: rgba(36, 149, 241, 0.614)">
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Cảm biến khí GAS</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Giá trị đo được:</div>
+              <!-- </div>
+
+              <div class="row"> -->
+                <div class="col-sm-3" style="text-align: right">
+                  <span id="sensor_data_3"> </span>
+                </div>
+                <div class="col-sm-3">
+                  <h5>%</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 360px">
+            <div class="card-header" style="background-color: rgba(36, 149, 241, 0.614)">
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Cảm biến cửa</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Có người trước cửa:</div>
+              <!-- </div>
+
+              <div class="row"> -->
+                <div class="col-sm-3" style="text-align: right">
+                  <span id="sensor_data_4"> </span>
+                </div>
+                <!-- <div class="col-sm-3">
+                  <h5>Lux</h5>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- button -->
+
+
+    <div
+      class="container pb-lg-2 my-4 bg-white"
+      id="container"
+      style="background-attachment: rgba(250, 250, 250, 0.89) !important"
+    >
+      <div class="row">
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Quạt phòng khách</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_1"> </span>
+                </div>
+              </div>
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_1">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Đèn phòng khách</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_2"> </span>
+                </div>
+              </div>
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_2" style="text-align: center">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Quạt phòng ăn</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_3"> </span>
+                </div>
+              </div>
+
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_3">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Đèn phòng ăn</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_4"> </span>
+                </div>
+              </div>
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_4">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Cửa ra vào</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_5"> </span>
+                </div>
+              </div>
+
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_5">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Chế độ tự động toàn bộ</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_6"> </span>
+                </div>
+              </div>
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_6">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Chế độ tự động phòng ăn</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_7"> </span>
+                </div>
+              </div>
+
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_7">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2  d-flex justify-content-center">
+          <div class="card" style="width: 380px">
+            <div
+              class="card-header"
+              style="background-color: rgba(35, 56, 191, 0.614)"
+            >
+              <div class="row">
+                <div class="col p-2 text-white" style="text-align: center">
+                  <h5>Chế độ tự động phòng khách</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="height: 100px">
+              <div class="row">
+                <div class="col" style="height: 40px">Trạng thái:</div>
+                <div class="col" style="text-align: center">
+                  <span id="device_data_8"> </span>  
+                </div>
+              </div>
+              <div class="row" id="text" style="text-align: center">
+                <div class="col d-flex justify-content-center">
+                  <button class="push-button" id="button_8">
+                    <!-- <img src="icon.png" alt="Icon" class="button-icon"> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- bieu_do -->
+
+
+    <div class="container p-6 my-4 bg-white text-white d-flex justify-content-center" id="container" style="max-height: 600px; max-width: 1200px; background-color: white">
+      <div class="col-8">
+        <div class="card">
+          <div
+            class="card-header text-white"
+            style="background-color: rgba(17, 193, 63, 0.614)"
+          >
+            <p class="h4 text-center mx-auto my-auto">Biểu đồ giá trị sensor 1</p>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <canvas
+                class="border rounded"
+                id="sensorChart1"
+                style="max-height: 500px; max-width: 1000px; background-color: white"
+              >
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container p-6 my-4 bg-white text-white d-flex justify-content-center" id="container" style="max-height: 600px; max-width: 1200px; background-color: white">
+      <div class="col-8">
+        <div class="card">
+          <div
+            class="card-header text-white"
+            style="background-color: rgba(17, 193, 63, 0.614)"
+          >
+            <p class="h4 text-center mx-auto my-auto">Biểu đồ giá trị sensor 2</p>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <canvas
+                class="border rounded"
+                id="sensorChart2"
+                style="max-height: 500px; max-width: 1000px; background-color: white"
+              >
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- <div class="container p-6 my-4 bg-white text-black" id="container"></div> -->
+
+    <script src="/public/js/javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SCL Pin=ESP32-32
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2

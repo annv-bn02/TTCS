@@ -1,0 +1,70 @@
+Removed Pin From Net: NetName=NTC Pin=ESP32-3
+Removed Pin From Net: NetName=MQ2 Pin=ESP32-4
+Removed Pin From Net: NetName=AS Pin=ESP32-5
+Removed Pin From Net: NetName=SERVO Pin=ESP32-6
+Removed Pin From Net: NetName=SW5 Pin=ESP32-7
+Removed Pin From Net: NetName=SW4 Pin=ESP32-8
+Removed Pin From Net: NetName=SW3 Pin=ESP32-9
+Removed Pin From Net: NetName=SW2 Pin=ESP32-10
+Removed Pin From Net: NetName=SW1 Pin=ESP32-11
+Removed Pin From Net: NetName=Relay4 Pin=ESP32-12
+Removed Pin From Net: NetName=Relay5 Pin=ESP32-13
+Removed Pin From Net: NetName=Relay1 Pin=ESP32-23
+Removed Pin From Net: NetName=Relay2 Pin=ESP32-24
+Removed Pin From Net: NetName=GND Pin=NTC10K-1
+Removed Pin From Net: NetName=VCC Pin=R13-1
+Removed Pin From Net: NetName=SDA Pin=RFID-1
+Removed Pin From Net: NetName=GND Pin=SERVO1-2
+Removed Pin From Net: NetName=VCC Pin=SERVO1-3
+Removed Pin From Net: NetName=GND Pin=SERVO2-2
+Removed Pin From Net: NetName=VCC Pin=SERVO2-3
+Change Component Designator: OldDesignator=  NewDesignator=J2
+Change Component Designator: OldDesignator=  NewDesignator=J5
+Added Component: Designator=MOVE SENSOR(HDR3)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MQ2 Pin=ESP32-3
+Added Pin To Net: NetName=NTC Pin=ESP32-4
+Added Pin To Net: NetName=SW5 Pin=ESP32-5
+Added Pin To Net: NetName=SW4 Pin=ESP32-6
+Added Pin To Net: NetName=SW3 Pin=ESP32-7
+Added Pin To Net: NetName=SW2 Pin=ESP32-8
+Added Pin To Net: NetName=AS Pin=ESP32-9
+Added Pin To Net: NetName=SW1 Pin=ESP32-10
+Added Pin To Net: NetName=Relay5 Pin=ESP32-11
+Added Pin To Net: NetName=PEPPER Pin=ESP32-12
+Added Pin To Net: NetName=SERVO Pin=ESP32-13
+Added Pin To Net: NetName=Relay4 Pin=ESP32-23
+Added Pin To Net: NetName=Relay2 Pin=ESP32-27
+Added Pin To Net: NetName=Relay1 Pin=ESP32-28
+Added Pin To Net: NetName=GND Pin=ESP32-38
+Added Pin To Net: NetName=VCC Pin=MOVE SENSOR-1
+Added Pin To Net: NetName=GND Pin=MOVE SENSOR-3
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=VCC Pin=SERVO1-2
+Added Pin To Net: NetName=GND Pin=SERVO1-3
+Added Pin To Net: NetName=VCC Pin=SERVO2-2
+Added Pin To Net: NetName=GND Pin=SERVO2-3
+Added Pin To Net: NetName=3.3V Pin=ESP32-1
+Added Pin To Net: NetName=3.3V Pin=NTC10K-1
+Added Net: Name=3.3V
+Added Pin To Net: NetName=MOVE Pin=ESP32-24
+Added Pin To Net: NetName=MOVE Pin=MOVE SENSOR-2
+Added Net: Name=MOVE
+Added Pin To Net: NetName=SS SDA Pin=ESP32-29
+Added Pin To Net: NetName=SS SDA Pin=RFID-1
+Added Net: Name=SS SDA
+Added Member To Class: ClassName=Khoi_Relay Member=Component J2 KF2
+Added Member To Class: ClassName=Khoi_Relay Member=Component J5 KF2
+Added Member To Class: ClassName=Sheet2 Member=Component MOVE SENSOR Header3
+Added Member To Class: ClassName=Sheet2 Member=Component  P1
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2

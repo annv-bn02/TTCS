@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=PEPPER Pin=ESP32-15
+Added Member To Class: ClassName=Khoi_Switch Member=Component R17 10k
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=3.3V Pin=RFID-8
+Added Pin To Net: NetName=VCC Pin=RFID-8
+Added Member To Class: ClassName=Khoi_Switch Member=Component R16 10k
+Added Member To Class: ClassName=Khoi_Switch Member=Component R18 10k

@@ -1,0 +1,131 @@
+Removed Pin From Net: NetName=SW5 Pin=ESP32-4
+Removed Pin From Net: NetName=SW4 Pin=ESP32-5
+Removed Pin From Net: NetName=SW3 Pin=ESP32-6
+Removed Pin From Net: NetName=SW2 Pin=ESP32-7
+Removed Pin From Net: NetName=SW1 Pin=ESP32-8
+Removed Pin From Net: NetName=Relay1 Pin=ESP32-9
+Removed Pin From Net: NetName=Relay2 Pin=ESP32-10
+Removed Pin From Net: NetName=Relay3 Pin=ESP32-11
+Removed Pin From Net: NetName=PEPPER Pin=ESP32-23
+Removed Pin From Net: NetName=SERVO Pin=ESP32-24
+Removed Pin From Net: NetName=SW1 Pin=ESP32-26
+Added Component: Designator=I2C(HDR4)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=Light Sensor(HDR3)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=MQ2(HDR4)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=NTC10K(HDR2)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=R13(R1/8W)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=RFID(Header8)
+Add component (AddParameter): Name = "Value"; Value = "Connector 8"; VariantName = "[No Variations]"
+Added Component: Designator=SERVO1(HDR3)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=SERVO2(HDR3)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=(PCBComponent_1)
+Added Pin To Net: NetName=PEPPER Pin=-1
+Added Pin To Net: NetName=GND Pin=-2
+Added Pin To Net: NetName=MQ2 Pin=ESP32-4
+Added Pin To Net: NetName=AS Pin=ESP32-5
+Added Pin To Net: NetName=SERVO Pin=ESP32-6
+Added Pin To Net: NetName=SW5 Pin=ESP32-7
+Added Pin To Net: NetName=SW4 Pin=ESP32-8
+Added Pin To Net: NetName=SW3 Pin=ESP32-9
+Added Pin To Net: NetName=SW2 Pin=ESP32-10
+Added Pin To Net: NetName=SW1 Pin=ESP32-11
+Added Pin To Net: NetName=PEPPER Pin=ESP32-15
+Added Pin To Net: NetName=Relay1 Pin=ESP32-23
+Added Pin To Net: NetName=Relay2 Pin=ESP32-24
+Added Pin To Net: NetName=Relay3 Pin=ESP32-26
+Added Pin To Net: NetName=GND Pin=I2C-1
+Added Pin To Net: NetName=VCC Pin=I2C-2
+Added Pin To Net: NetName=SDA Pin=I2C-3
+Added Pin To Net: NetName=SCL Pin=I2C-4
+Added Pin To Net: NetName=VCC Pin=Light Sensor-1
+Added Pin To Net: NetName=GND Pin=Light Sensor-2
+Added Pin To Net: NetName=AS Pin=Light Sensor-3
+Added Pin To Net: NetName=VCC Pin=MQ2-1
+Added Pin To Net: NetName=GND Pin=MQ2-2
+Added Pin To Net: NetName=MQ2 Pin=MQ2-4
+Added Pin To Net: NetName=GND Pin=NTC10K-1
+Added Pin To Net: NetName=NTC Pin=NTC10K-2
+Added Pin To Net: NetName=VCC Pin=R13-1
+Added Pin To Net: NetName=NTC Pin=R13-2
+Added Pin To Net: NetName=SDA Pin=RFID-1
+Added Pin To Net: NetName=SCK Pin=RFID-2
+Added Pin To Net: NetName=MOSI Pin=RFID-3
+Added Pin To Net: NetName=MISO Pin=RFID-4
+Added Pin To Net: NetName=SCK Pin=RFID-5
+Added Pin To Net: NetName=GND Pin=RFID-6
+Added Pin To Net: NetName=RST Pin=RFID-7
+Added Pin To Net: NetName=VCC Pin=RFID-8
+Added Pin To Net: NetName=SERVO Pin=SERVO1-1
+Added Pin To Net: NetName=GND Pin=SERVO1-2
+Added Pin To Net: NetName=VCC Pin=SERVO1-3
+Added Pin To Net: NetName=SERVO Pin=SERVO2-1
+Added Pin To Net: NetName=GND Pin=SERVO2-2
+Added Pin To Net: NetName=VCC Pin=SERVO2-3
+Added Member To Class: ClassName=Sheet2 Member=Component C5 104
+Added Member To Class: ClassName=Sheet2 Member=Component I2C Header4
+Added Member To Class: ClassName=Sheet2 Member=Component Light Sensor Header3
+Added Member To Class: ClassName=Sheet2 Member=Component MQ2 Header4
+Added Member To Class: ClassName=Sheet2 Member=Component NTC10K Header2
+Added Member To Class: ClassName=Sheet2 Member=Component R13 10k
+Added Member To Class: ClassName=Sheet2 Member=Component RFID JP8
+Added Member To Class: ClassName=Sheet2 Member=Component SERVO1 Header3
+Added Member To Class: ClassName=Sheet2 Member=Component SERVO2 Header3
+Added Member To Class: ClassName=Sheet2 Member=Component  P1
+Added Room: Name=Khoi_Relay
+Added Room: Name=Khoi_Switch
+Added Room: Name=Sheet2
