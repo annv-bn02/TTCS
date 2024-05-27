@@ -1,3 +1,2 @@
-Record=TopLevelDocument|FileName=Khoi_Relay.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Khoi_Relay.SchDoc|FileName=Khoi_Switch.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Khoi_Relay.SchDoc|FileName=Sheet2.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=Khoi_Switch.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Khoi_Switch.SchDoc|FileName=Sheet2.SchDoc|SheetNumber=1

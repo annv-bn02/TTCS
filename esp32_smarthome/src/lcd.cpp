@@ -42,7 +42,7 @@ void Print_Funtion()
   lcd.setCursor(11, 1);
   if ( auto_mode_kitchen == 1 && auto_mode_living_room == 1)
   {
-    lcd.print(" ATA");
+    lcd.print(" ATA ");
   }
   else if ( auto_mode_kitchen == 1)
   {
@@ -55,6 +55,6 @@ void Print_Funtion()
   else
   {
     lcd.setCursor(11, 1);
-    lcd.print("TC   ");
+    lcd.print(" MN  ");
   }
 }

@@ -15,7 +15,7 @@ uint8_t flag_checkRFID = 1;
 int count_wrong = 0;
 int count_buzzer = 0;
 int count_light = 0;
-uint8_t flag_open_door = 0;
+uint8_t flag_open_door = DOOR_CLOSE;
 uint8_t door = 0;
 int pos = 0;
 int i = 0;
@@ -54,7 +54,7 @@ void Check_RFID()
   }
   if ( nuidPICC[0] == ip[0] && nuidPICC[1] == ip[1] && nuidPICC[2] == ip[2] && nuidPICC[3] == ip[3] )
   {
-    flag_open_door = 1;
+    flag_open_door = OPEN_DOOR;
   }
   else 
   {
@@ -66,7 +66,8 @@ void Check_RFID()
 
 void Open_Door()
 {
-  pos -= 4;
+  door = 1;
+  pos -= 2;
   if ( pos > -108 )
   {
     i = 108 - abs(pos);
@@ -77,13 +78,25 @@ void Open_Door()
   }
   else if ( pos <= -308 && pos > -416)
   {
+    flag_open_door = CLOSE_DOOR;
+  }
+  
+  servo_door.write(i);
+}
+
+void Close_Door()
+{
+  pos -= 2;
+  if ( pos <= -308 && pos > -416)
+  {
     i = abs(pos) - 308;
   }
   else if ( pos == -416 )
   {
     i = 108;
     pos = 0;
-    flag_open_door = 0;
+    flag_open_door = DOOR_CLOSE;
+    door = 0;
   }
   servo_door.write(i);
 }
@@ -105,7 +118,7 @@ void Wrong_RFID()
 
 void Door_Light_Control()
 {
-  prox = digitalRead( PIN_PROX );
+  
   if ( Night() == 1 && prox == 0)
   {
     digitalWrite( DOOR_LIGHT_PIN, HIGH);
@@ -113,7 +126,7 @@ void Door_Light_Control()
   else 
   {
     count_light++;
-    if ( count_light >= 50)
+    if ( count_light >= 500)
     {
       count_light = 0;
       digitalWrite( DOOR_LIGHT_PIN, LOW);

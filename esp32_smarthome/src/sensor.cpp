@@ -19,26 +19,10 @@ void Setup_Sensor()
     pinMode(PIN_LIGHT, INPUT);
     pinMode(PIN_PROX, INPUT);
 }
-void Temp ()
-{
-    float Vout, Rth, adc_value; 
-    adc_value = analogRead(PIN_NTC);
-    Vout = (adc_value * VCC) / adc_resolution;
-    Rth = (VCC * R2 / Vout) - R2;
-    adc_value = (1 / (A + (B * log(Rth)) + (C * pow((log(Rth)),3))));  
-    adc_value = adc_value - 273.15;
-    cnt_temp_data += adc_value;
-}
 
 void Temp_Update(){
   t = cnt_temp_data / 50;
   cnt_temp_data = 0;
-}
-
-void Gas()
-{
-  int x = analogRead(PIN_GAS) - 2095; // 2095 ~ 4095
-  cnt_gas_data += x;
 }
 
 void Gas_Update()
@@ -55,9 +39,22 @@ void Gas_Update()
   cnt_gas_data = 0;
 }
 
+void Sensor_Read_All()
+{
+  float Vout, Rth, adc_value; 
+  adc_value = analogRead(PIN_NTC);
+  Vout = (adc_value * VCC) / adc_resolution;
+  Rth = (VCC * R2 / Vout) - R2;
+  adc_value = (1 / (A + (B * log(Rth)) + (C * pow((log(Rth)),3))));  
+  adc_value = adc_value - 273.15;
+  cnt_temp_data += adc_value;
+  light = digitalRead(PIN_LIGHT);
+  prox = digitalRead( PIN_PROX );
+  cnt_gas_data += analogRead(PIN_GAS) - 2095;
+}
+
 int Night()
 {
-  light = digitalRead(PIN_LIGHT);
     if (light == 1) // trời tối
     {
         return 1;

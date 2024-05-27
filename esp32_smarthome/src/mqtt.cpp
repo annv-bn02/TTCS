@@ -76,15 +76,19 @@ void Detext(String Str)
   deserializeJson(data, Str); 
   if(data["fan_living_room"] != 0 && data["fan_living_room"].as<String>() == "1"){
     flag_fan_living_room = !flag_fan_living_room;
+    auto_mode_living_room = 0;
   }
   if(data["light_living_room"] != 0 && data["light_living_room"].as<String>() == "1"){
     flag_light_living_room = !flag_light_living_room;
+    auto_mode_living_room = 0;
   }
   if(data["light_kitchen"] != 0 && data["light_kitchen"].as<String>() == "1"){
     flag_light_kitchen = !flag_light_kitchen;
+    auto_mode_kitchen = 0;
   }
   if(data["fan_kitchen"] != 0 && data["fan_kitchen"].as<String>() == "1"){
     flag_fan_kitchen = !flag_fan_kitchen;
+    auto_mode_kitchen = 0;
   }
   if(data["auto_mode_kitchen"] != 0 && data["auto_mode_kitchen"].as<String>() == "1"){
     auto_mode_kitchen = !auto_mode_kitchen;
@@ -96,7 +100,7 @@ void Detext(String Str)
     auto_mode_all = !auto_mode_all;
   }
   if(data["door"] != 0 && data["door"].as<String>() == "1"){
-    door = !door;
+    flag_open_door = OPEN_DOOR;
   }
 
 }

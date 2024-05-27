@@ -59,15 +59,15 @@ client.on("message", function (topic, message) {
   var device_data_7 = parseInt(data.auto_mode_kitchen);
   var device_data_8 = parseInt(data.auto_mode_living_room);
   io.emit("sensor_io_1", sensor_data_1);
-  io.emit("sensor_io_2", sensor_data_2 ? "Sáng" : "Tối");
+  io.emit("sensor_io_2", sensor_data_2 ? "Tối" : "Sáng");
   io.emit("sensor_io_3", sensor_data_3);
-  io.emit("sensor_io_4", sensor_data_4 ? "Có" : "Không");
+  io.emit("sensor_io_4", sensor_data_4 ? "Không" : "Có");
   // // Kiểm tra và điều khiển thiết bị dựa trên giá trị của device_data
   io.emit("device_io_1", device_data_1 ? "Bật" : "Tắt");
   io.emit("device_io_2", device_data_2 ? "Bật" : "Tắt");
   io.emit("device_io_3", device_data_3 ? "Bật" : "Tắt");
   io.emit("device_io_4", device_data_4 ? "Bật" : "Tắt");
-  io.emit("device_io_5", device_data_5 ? "Bật" : "Tắt");
+  io.emit("device_io_5", device_data_5 ? "Mở" : "Đóng");
   io.emit("device_io_6", device_data_6 ? "Bật" : "Tắt");
   io.emit("device_io_7", device_data_7 ? "Bật" : "Tắt");
   io.emit("device_io_8", device_data_8 ? "Bật" : "Tắt");

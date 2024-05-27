@@ -72,22 +72,26 @@ control_8.addEventListener("click", function () {
 
 
 const socket = io();
-
+var count_update_chart1 = 0, count_update_chart2 = 0;
 socket.on("sensor_io_1", function (data_received) {
   let sensor_data_1 = data_received;
   document.getElementById("sensor_data_1").innerHTML = sensor_data_1;
-
-  update_chart1.data.datasets[0].data.push(sensor_data_1);
-  const maxDataPoints = 40;
-  if (update_chart1.data.datasets[0].data.length > maxDataPoints) {
-    update_chart1.data.datasets[0].data.shift();
+  count_update_chart1++;
+  if(count_update_chart1 == 10)
+  {
+    count_update_chart1 = 0;
+    update_chart1.data.datasets[0].data.push(sensor_data_1);
+    const maxDataPoints = 360;
+    if (update_chart1.data.datasets[0].data.length > maxDataPoints) {
+      update_chart1.data.datasets[0].data.shift();
+    }
+    const formattedTime = moment().format("HH:mm:ss, DD/MM/YYYY");
+    update_chart1.data.labels.push(formattedTime);
+    if (update_chart1.data.labels.length > maxDataPoints) {
+      update_chart1.data.labels.shift();
+    }
+    update_chart1.update();
   }
-  const formattedTime = moment().format("HH:mm:ss, DD/MM/YYYY");
-  update_chart1.data.labels.push(formattedTime);
-  if (update_chart1.data.labels.length > maxDataPoints) {
-    update_chart1.data.labels.shift();
-  }
-  update_chart1.update();
 });
 
 socket.on("sensor_io_2", function (data_received) {
@@ -99,18 +103,22 @@ socket.on("sensor_io_2", function (data_received) {
 socket.on("sensor_io_3", function (data_received) {
   let sensor_data_3 = data_received;
   document.getElementById("sensor_data_3").innerHTML = sensor_data_3;
-
-  update_chart2.data.datasets[0].data.push(sensor_data_3);
-  const maxDataPoints = 40;
-  if (update_chart2.data.datasets[0].data.length > maxDataPoints) {
-    update_chart2.data.datasets[0].data.shift();
+  count_update_chart2++;
+  if(count_update_chart2 == 10)
+  {
+    count_update_chart2 = 0;
+    update_chart2.data.datasets[0].data.push(sensor_data_3);
+    const maxDataPoints = 360;
+    if (update_chart2.data.datasets[0].data.length > maxDataPoints) {
+      update_chart2.data.datasets[0].data.shift();
+    }
+    const formattedTime = moment().format("HH:mm:ss, DD/MM/YYYY");
+    update_chart2.data.labels.push(formattedTime);
+    if (update_chart2.data.labels.length > maxDataPoints) {
+      update_chart2.data.labels.shift();
+    }
+    update_chart2.update();
   }
-  const formattedTime = moment().format("HH:mm:ss, DD/MM/YYYY");
-  update_chart2.data.labels.push(formattedTime);
-  if (update_chart2.data.labels.length > maxDataPoints) {
-    update_chart2.data.labels.shift();
-  }
-  update_chart2.update();
 });
 
 socket.on("sensor_io_4", function (data_received) {
@@ -164,7 +172,7 @@ const update_chart1 = new Chart("sensorChart1", {
     labels: [],
     datasets: [
       {
-        label: "Sensor 1",
+        label: "Nhiệt độ",
         lineTension: 0.3,
         backgroundColor: "#AAff7f",
         borderColor: "#AAff7f",
@@ -188,7 +196,7 @@ const update_chart1 = new Chart("sensorChart1", {
       y: {
         title: {
           display: true,
-          text: "Giá trị",
+          text: "Giá trị nhiệt độ(C)",
         },
       },
     },
@@ -201,7 +209,7 @@ const update_chart2 = new Chart("sensorChart2", {
     labels: [],
     datasets: [
       {
-        label: "Sensor 2",
+        label: "Khí gas",
         lineTension: 0.3,
         backgroundColor: "#7FAAFF",
         borderColor: "#7FAAFF",
@@ -225,7 +233,7 @@ const update_chart2 = new Chart("sensorChart2", {
       y: {
         title: {
           display: true,
-          text: "Giá trị",
+          text: "Giá trị khí gas(%)",
         },
       },
     },

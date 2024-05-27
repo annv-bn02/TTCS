@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
 
 body {
-  background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
+  background-image: url("smarthome.jpg");
   background-size: cover;
-  -webkit-animation: slidein 100s;
-  animation: slidein 100s;
+  /* -webkit-animation: slidein 100s;
+  animation: slidein 100s; */
 
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -59,13 +59,15 @@ body {
 }
 
 .push-button {
-  padding: 20px 30px; /* Kích thước của nút */
-  background-color: #17cf57; /* Màu nền của nút */
-  color: #fff; /* Màu chữ của nút */
+  padding: 20px 50px; /* Kích thước của nút */
+  background-color: #e8dc2f; /* Màu nền của nút */
+  color: #000000; /* Màu chữ của nút */
   border: none;
   cursor: pointer;
   display: inline-block;
-  border-radius: 15px; /* Bo tròn góc của nút */
+  text-align: center;
+  border-radius: 20px; 
+  /* background-image: url("icon.png"); */
 }
 
 .button-icon {
@@ -73,6 +75,7 @@ body {
   height: 20px;
   margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
   vertical-align: middle;
+  
 }
 
 

@@ -46,9 +46,8 @@ void IRAM_ATTR check_status();
 void Setup_Timer();
 
 void Setup_Sensor();
-void Temp ();
+void Sensor_Read_All ();
 void Temp_Update();
-void Gas();
 void Gas_Update();
 int Night();
 
